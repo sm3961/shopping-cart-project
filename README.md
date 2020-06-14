@@ -1,5 +1,5 @@
 # shopping-cart-project
-My work for the Shopping Cart project.
+My work for the Shopping Cart project. Completed by Soumom Manir.
 
 [Project Description]
 (https://github.com/prof-rossetti/intro-to-python/tree/master/projects/shopping-cart#basic-requirements)
