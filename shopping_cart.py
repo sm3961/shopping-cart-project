@@ -1,6 +1,7 @@
 
 # shopping_cart.py
 
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -39,3 +40,14 @@ def to_usd(my_price):
 # TODO: write some Python code here to produce the desired output
 
 print(products)
+
+#INFO CAPTURE / INPUT
+
+selected_id = input("Please input a product identifier: ") #string
+print(selected_id)
+print(type(selected_id))
+
+
+
+
+#INFO DISPLAY / OUTPUT
