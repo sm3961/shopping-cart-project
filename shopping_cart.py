@@ -62,11 +62,29 @@ while True:
 
 # print(selected_ids)
 
+import datetime
+now = datetime.datetime.now()
+tax = 1.70
+
+
+print("#> ---------------------------------")
+print("#>VERY ORGANIC GROCERY")
+print("#>WWW.VERYORGANICGROCERY.COM")
+print("#> ---------------------------------")
+print("#>CHECKOUT AT " + now.strftime("%Y-%m-%d %H:%M:%S"))
+print("#> ---------------------------------")
+
 
 for selected_id in selected_ids:
     matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
     matching_product = matching_products[0]
     total_price = total_price + matching_product["price"]
-    print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
+    print("#>SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
 
-print("TOTAL PRICE: " + str(total_price))    #format as USD
+print("#>SUBTOTAL PRICE: $" + str(total_price))   #format as USD
+print("#>TAX: $1.70")
+print("#>TOTAL: $" + str(total_price + tax))
+
+print("#> ---------------------------------")
+print("#>THANKS, SEE YOU AGAIN SOON!")
+print("#> ---------------------------------")
